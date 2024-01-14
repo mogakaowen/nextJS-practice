@@ -1,6 +1,10 @@
 import Link from "next/link";
 import { FaStar, FaCodeBranch, FaEye } from "react-icons/fa";
 
+export const metadata = {
+  title: "Code",
+};
+
 async function getRepos() {
   const response = await fetch(
     "https://api.github.com/users/mogakaowen/repos",
@@ -11,7 +15,7 @@ async function getRepos() {
     }
   );
 
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+  await new Promise((resolve) => setTimeout(resolve, 1000)); // simulate slow network with 1 second delay
 
   const data = await response.json();
   return data;

@@ -3,6 +3,10 @@ import Link from "next/link";
 import RepoDirs from "@/app/components/RepoDir";
 import { Suspense } from "react";
 
+export const metadata = {
+  title: "Repo",
+};
+
 const RepoPage = ({ params: { name } }) => {
   return (
     <div className="card">
