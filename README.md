@@ -1,4 +1,4 @@
-# React JS Practice
+# NextJS Practice
 
 ## In this repo, I learnt the basics of nextjs and built a simple app to display a website for an online education platform and the courses offered
 
